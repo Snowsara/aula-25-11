@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Conversor de moeda</h1>
+
+  <div class="option-container">
+    <input [(ngModel)]="opcaoEscolhida" type="radio" name="moeda" value="BRL-USD">
+    <span>Real para Dólar</span><br>
+    <input [(ngModel)]="opcaoEscolhida" type="radio" name="moeda2" value="BRL-EUR">
+    <span>Real para Euro</span><br>
+    <input [(ngModel)]="opcaoEscolhida" type="radio" name="moeda3" value="BRL-CHF">
+    <span>Real para Franco Suíço</span><br>
+    <input [(ngModel)]="opcaoEscolhida" type="radio" name="moeda4" value="BRL-CLP">
+    <span>Real para Peso Chileno</span><br>
+    
+  </div>
+
+  <div class="input-container">
+    <span>Valor</span>
+    <input [(ngModel)]="valor" type="number">
+    <button (click)="calcularConversao()">Calcular</button>
+  </div>
+
+  <div class="result-container">
+    <span>Resultado</span>
+    <input [(ngModel)]="resultado" type="number" disabled>
+  </div>
+
+</div>
